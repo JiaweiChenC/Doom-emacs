@@ -100,3 +100,7 @@
 (setq org-latex-listings 't)
 (setq org-roam-directory "~/Documents/roam")
 
+
+(setq deft-directory "~/Desktop/notes"
+      deft-extensions '("org" "txt" "md")
+      deft-recursive t)
