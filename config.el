@@ -104,3 +104,4 @@
 (setq deft-directory "~/Desktop/notes"
       deft-extensions '("org" "txt" "md")
       deft-recursive t)
+(setq org-agenda-span 30)
