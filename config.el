@@ -52,7 +52,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+;; (setq doom-theme 'doom-one)
 ;;(setq doom-theme nil)
 
 ;; If you use `org' and don't want your org files in the default location below,
@@ -62,7 +62,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type 'relative)
+(setq display-line-numbers-type 'nil)
 
 
 (setq auto-save-default t)
@@ -82,8 +82,7 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-
-
+(setq doom-theme 'doom-dracula)
 (with-eval-after-load 'ox-latex
 (add-to-list 'org-latex-classes
              '("org-plain-latex"
@@ -104,4 +103,11 @@
 (setq deft-directory "~/Desktop/notes"
       deft-extensions '("org" "txt" "md")
       deft-recursive t)
+
 (setq org-agenda-span 30)
+
+(setq org-fontify-done-headline t)
+(setq evil-split-window-below t
+      evil-vsplit-window-right t)
+
+(setq org-log-done 't)
