@@ -1,8 +1,6 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
-
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
-
 (use-package! cdlatex
   :when (featurep! +cdlatex)
   :hook (LaTeX-mode . cdlatex-mode)
@@ -15,8 +13,6 @@
         ;; Smartparens takes care of inserting closing delimiters, and if you
         ;; don't use smartparens you probably don't want these either.
         "$" nil
-        "(" nil
-        "{" nil
         "[" nil
         "|" nil
         "<" nil
@@ -59,11 +55,9 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
-
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'nil)
-
 
 (setq auto-save-default t)
 ;; Here are some additional functions/macros that could help you configure Doom:
@@ -83,6 +77,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 (setq doom-theme 'doom-dracula)
+
 (with-eval-after-load 'ox-latex
 (add-to-list 'org-latex-classes
              '("org-plain-latex"
@@ -104,9 +99,10 @@
       deft-extensions '("org" "txt" "md")
       deft-recursive t)
 
-(setq org-agenda-span 30)
+(setq org-agenda-span 'month)
 
 (setq org-fontify-done-headline t)
+
 (setq evil-split-window-below t
       evil-vsplit-window-right t)
 
