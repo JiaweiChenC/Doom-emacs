@@ -7,8 +7,10 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
+ '(conda-anaconda-home "/Users/jiawei/opt/anaconda3")
+ '(conda-env-home-directory "/Users/jiawei/opt/anaconda3")
  '(custom-safe-themes
-   '("7a7b1d475b42c1a0b61f3b1d1225dd249ffa1abb1b7f726aec59ac7ca3bf4dae" "234dbb732ef054b109a9e5ee5b499632c63cc24f7c2383a849815dacc1727cb6" default))
+   '("246a9596178bb806c5f41e5b571546bb6e0f4bd41a9da0df5dfbca7ec6e2250c" "7a7b1d475b42c1a0b61f3b1d1225dd249ffa1abb1b7f726aec59ac7ca3bf4dae" "234dbb732ef054b109a9e5ee5b499632c63cc24f7c2383a849815dacc1727cb6" default))
  '(exwm-floating-border-color "#242530")
  '(fci-rule-color "#6272a4")
  '(highlight-tail-colors
@@ -21,7 +23,7 @@
  '(jdee-db-spec-breakpoint-face-colors (cons "#1E2029" "#565761"))
  '(objed-cursor-color "#ff5555")
  '(org-agenda-files
-   '("~/Documents/roam/daily_update.org" "/Users/jiawei/Documents/roam/20220412130421-project_4_notes.org" "/Users/jiawei/Desktop/research/daily_update.org" "/Users/jiawei/org/journal.org"))
+   '("~/Documents/roam/daily_update.org" "/Users/jiawei/Documents/roam/20220412130421-project_4_notes.org" "/Users/jiawei/Desktop/research/daily_update.org" "/Users/jiawei/org/journal.org" "/Users/jiawei/Documents/roam/daily"))
  '(org-agenda-todo-ignore-scheduled t)
  '(org-roam-capture-templates
    '(("d" "default" plain "%?" :target
@@ -29,7 +31,7 @@
 ")
       :unnarrowed t)))
  '(package-selected-packages
-   '(org-roam-ui visual-fill-column ts request pdf-tools org-roam org-bullets ht flycheck-pycheckers dracula-theme deferred auctex))
+   '(lsp-python-ms org-roam-ui visual-fill-column ts request pdf-tools org-roam org-bullets ht flycheck-pycheckers dracula-theme deferred auctex))
  '(pdf-view-midnight-colors (cons "#f8f8f2" "#282a36"))
  '(rustic-ansi-faces
    ["#282a36" "#ff5555" "#50fa7b" "#f1fa8c" "#61bfff" "#ff79c6" "#8be9fd" "#f8f8f2"])

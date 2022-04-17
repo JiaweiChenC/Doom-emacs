@@ -50,3 +50,4 @@
 ;(unpin! t)
 (package! org-super-agenda)
 (unpin! org-roam company-org-roam)
+(package! org-roam-ui)
