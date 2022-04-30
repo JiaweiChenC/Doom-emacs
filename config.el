@@ -7,12 +7,13 @@
   :hook (org-mode . org-cdlatex-mode)
   :config
   ;; Use \( ... \) instead of $ ... $.
-  (setq cdlatex-use-dollar-to-ensure-math nil)
+  (setq cdlatex-use-dollar-to-ensure-math t)
   ;; Disabling keys that have overlapping functionality with other parts of Doom.
   (map! :map cdlatex-mode-map
         ;; Smartparens takes care of inserting closing delimiters, and if you
         ;; don't use smartparens you probably don't want these either.
         "$" nil
+        "(" nil
         "[" nil
         "|" nil
         "<" nil
@@ -76,7 +77,7 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(setq doom-theme 'doom-dracula)
+(setq doom-theme 'modus-operandi)
 
 (with-eval-after-load 'ox-latex
 (add-to-list 'org-latex-classes
@@ -124,3 +125,5 @@
           org-roam-ui-follow t
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
+
+(setq org-latex-create-formula-image-program 'dvisvgm)
